@@ -1,0 +1,391 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+ul{
+    list-style: none;
+}
+
+html,body{
+    font-size: 100px;
+    width: 100%;
+    height: 100%;
+
+}
+#wrap{
+    width: 6.4rem;
+    overflow: hidden;
+    background: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+h2{
+    font-weight: normal
+}
+
+/*头部信息*/
+#head{
+    width: 100%;
+    margin: 0 auto;
+    background: #2a282c;
+    color: #fff;
+
+}
+.title{
+    overflow: hidden;
+    padding:0.26rem 0;
+    margin: 0 0.2rem;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+
+
+}
+
+
+/*标题*/
+.title_text{
+    font-size: 0.36rem;
+    text-align: center;
+/*    float: left;*/
+    line-height: 0.34rem;
+    display: flex;
+    width: 3.5rem;
+}
+.title_text p{
+    width: 1.30rem;
+    height: 0.47rem;
+}
+.title_text span{
+   width: 0.60rem;
+    height: 0.47rem;
+}
+.rtn{
+    width: 1.95rem   ;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.36rem;
+ /*   float: left;*/
+    line-height: 0.38rem;
+
+}
+p.america_text{
+    width: 0.8rem;
+}
+.point{
+    position: absolute;
+    right: 0.07rem;
+    top: 0.39rem;
+
+}
+.point span{
+    float: left;
+    display: block;
+    width: 0.12rem;
+    height: 0.12rem;
+    border-radius: 50%;
+    background: #fff;
+    margin-left: 0.09rem;
+}
+/*比分窗口*/
+
+.scoresBox{
+    width: 6.4rem;
+    height: 4.42rem;
+    background: url("images/content.jpg")no-repeat center;
+    background-size: 100% 100%;
+    text-align: center;
+    display: flex;
+    flex-direction:column ;
+}
+.scoresText{
+    font-size: 0.6rem;
+    margin-top: 1.06rem;
+    line-height: 0.86rem;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+.scoresText p{
+    width: 3.26rem;
+    height: 0.52rem;
+}
+.america,.spain{
+    display: block;
+    width: 0.86rem;
+    height: 0.86rem;
+    background: url("images/americal.png")no-repeat;
+    background-size: 100%;
+}
+.spain{
+    background: url("images/spain.png")no-repeat;
+    background-size: 100%;
+}
+.scoresTime {
+ display: flex;
+    justify-content: center;
+    margin-top: 0.49rem;
+    line-height: 0.16rem;
+}
+.scoresTime span{
+    font-size: 0.18rem;
+    display: block;
+    margin-right: 24px;
+}
+
+#over{
+    position: absolute;
+    left: 0;
+    top: 0.9rem;
+    bottom: 1.37rem;
+    overflow: auto;
+    color: #fff;
+}
+
+.video{
+display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 0.44rem;
+    margin-bottom: 0.6rem;
+}
+.scorTi_span{
+    margin-left: 0.11rem;
+}
+.video_p{
+    height: 0.4rem;
+    width: 1.6rem;
+    background: #fff;
+    border-radius: 0.05rem;
+    line-height: 0.4rem;
+    color:#5bb0e0;
+    font-size: 0.23rem;
+    position: relative;
+}
+.video_p span{
+    margin-left: 0.19rem;
+    display: block;
+    text-align: left;
+
+}
+
+.ic_Triangle{
+    display: block;
+    width: 0.16rem;
+    height: 0.18rem;
+    background: url("images/ic_Triangle.png")no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0.19rem;
+    top: 0.11rem;
+}
+
+.contentBox{
+    width: 100%;
+    font-size: 0.3rem;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    line-height: 0.57rem;
+    border-top:0.01rem  solid #fff;
+    padding-top: 0.18rem;
+
+}
+/*球员支持度*/
+
+.cont_left,.cont_right{
+    width: 0.30rem;
+    height: 0.40rem;
+    display: block;
+    margin-left: 0.35rem;
+}
+.content_leftC{
+    margin-left: 0.39rem;
+}
+.cont_mid{
+    margin-left: 1.03rem;
+}
+.content_rightC{
+    margin-left: 1rem;
+}
+.cont_left{
+    background: url("images/content_left.png");
+    background-size: 100%;
+}
+.cont_right{
+    background: url("images/content_right.png");
+   position: absolute;
+    right: 0.37rem;
+    background-size: 100%;
+}
+/*main部分*/
+#main{
+    background: #f0f0f0;
+    width: 100%;
+    padding: 0   0 0.23rem;
+}
+.newT{
+    margin:0 0.21rem;
+}
+.data p,.game p{
+    font-size: 0.28rem;
+color: #818283;
+}
+.data{
+    padding-bottom: 0.12rem;
+}
+.game h2{
+    display: flex;
+    justify-content: center;
+    border-bottom: 0.01rem solid #d7d7d7;
+    padding:0.21rem 0 0.22rem 0.40rem;
+    line-height: 0.29rem;
+}
+.game p{
+   color: black;
+    flex: 1;
+}
+.game span{
+    display: block;
+    color: #797979;
+    font-size: 0.23rem;
+    flex: 2;
+    margin-left: 1.1rem;
+}
+/*对阵和赛程*/
+.schedule_text{
+    margin-top: 0.34rem;
+    font-size: 0.26rem;
+    color: #818283;
+}
+.schedule{
+    padding-left: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 0.01rem solid #d7d7d7;
+    padding-bottom: 0.30rem;
+    margin-top: 0.28rem;
+}
+.a_img{
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    line-height: 1.2rem;
+    width: 1.5rem;
+    height: 1.2rem;
+    left: 0;
+    top: 0;
+    border: 0;
+}
+.a_img img{
+
+    height: 1.2rem;
+    width: 1.5rem;
+    background: #00A5FF;
+
+}
+.schedule_word h2{
+    font-size: 0.3rem;
+    color: #696969;
+}
+.schedule_word h2 a{
+    color: #696969;
+}
+
+.schedule_word{
+    margin-left: 0.2rem;
+    margin-right: 0.1rem;
+    position: relative;
+}
+.schedule_word p{
+    margin-left: 0.01rem;
+    font-size:0.22rem;
+    color: #bdbfc0;
+    line-height: 0.34rem;
+}
+.told{
+    font-size:0.22rem;
+    color: #bdbfc0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.schedule2{
+    border-bottom: 0;
+    margin-top: 0.24rem;
+}
+/*结尾*/
+#foot{
+    background: #fff;
+    padding:0.24rem 0.21rem 0.32rem;
+
+
+}
+.footF{
+    position: relative;
+    border: 0;
+padding-left: 0.9rem;
+}
+
+.footF_h2{
+    font-size: 0.32rem;
+
+}
+.footF_h2 a{
+    color: black;
+}
+.footF_p{
+font-size:0.22rem ;
+    margin-top: 0.12rem;
+}
+.footF_p a{
+    color: #bdbfc0;
+}
+.foot_logo{
+    border: 1px solid #d7d7d7;
+    display: block;
+    overflow: hidden;
+    width: 0.9rem;
+    height: 0.88rem;
+    position: absolute;
+    background: url("images/foot_logo.png")no-repeat;
+    left: 0;
+    top: 0;
+    background-size: 100%;
+    border-radius: 0.2rem;
+}
+.foot_logo{
+
+
+}
+.foot_word{
+    margin-left: 0.12rem;
+    margin-right: 0.1rem;
+}
+.load{
+   width: 1.2rem;
+    height: 0.6rem;
+    border: 0.01rem solid #289ce9;
+    background: #289ce9;
+    line-height: 0.6rem;
+    position: absolute;
+    right: 0.4rem;
+    right: 0.4rem;
+    border-radius: 0.08rem;
+    bottom: 0;
+}
+.load a{
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-size: 0.26rem;
+}
+#foot{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
